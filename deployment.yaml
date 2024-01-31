@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: employee-backend
+  name: backend
 spec:
   replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: employee-backend
+      app: backend
   template:
     metadata:
       labels:
-        app: employee-backend
+        app: backend
     spec:
       containers:
-      - name: backend-springboot
-        image: giglepeople/crud_final:h2
+      - name: backend
+        image: ghcr.io/kt-cloudnative/springboot_crud_security:v1
         imagePullPolicy: Always
         env:
           - name: SPRING_PROFILES_ACTIVE
