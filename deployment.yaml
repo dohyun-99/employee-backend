@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: ghcr.io/shclub/vue3:v1
+        image: ghcr.io/dohyun-99/springboot_crud_security:master
         imagePullPolicy: Always
         env:
           - name: SPRING_PROFILES_ACTIVE
