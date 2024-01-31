@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: ghcr.io/dohyun-99/springboot_crud_security:v1.0
+        image: ghcr.io/heewon00/springboot_crud_security:argocd_v1
         imagePullPolicy: Always
         env:
           - name: SPRING_PROFILES_ACTIVE
